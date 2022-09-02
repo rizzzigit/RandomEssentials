@@ -162,5 +162,5 @@ var randomNetPort = function (min, max) { return (0, exports.randomInt)(max, {
         listener.on('error', function (error) { return resolve(false); });
         listener.listen(result + min);
     }); }
-}); };
+}).then(function (result) { return result + min; }); };
 exports.randomNetPort = randomNetPort;

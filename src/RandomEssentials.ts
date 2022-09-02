@@ -77,4 +77,4 @@ export const randomNetPort = (min: number, max: number) => randomInt(max, {
 
     listener.listen(result + min)
   })
-})
+}).then((result) => result + min)

@@ -1,4 +1,3 @@
-/// <reference types="node" />
 export interface RandomOptions<Value> {
     /**
      * This can be used to make sure uniqueness.
